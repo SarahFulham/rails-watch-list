@@ -11,6 +11,15 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar bg-light">
+      <div class="container p-3">
+        <a class="navbar-brand fw-bold text-dark h2" href="/">Lists</a>
+        <div class="text-end">
+        <a class="btn btn-ghost"<%= link_to 'Create a list', new_list_path %></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+      <%= yield %>
   </body>
 </html>
